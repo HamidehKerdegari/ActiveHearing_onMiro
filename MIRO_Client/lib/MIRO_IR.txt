@@ -1,0 +1,5 @@
+python synth_sweep.py --T=10 --FS=48000 --low=100 --high=20000 --tail sweep
+
+python extract_ir.py ../TenRecordingsStandingStill/N050H050R000L000T01.wav sweep.inv.npy response.npy
+
+sox N100H100R100L000.wav  channel4.wav remix 4
